@@ -36,6 +36,7 @@ const run = async () => {
   // Start authentication loader
   status.start();
 
+  // TODO: Use https://docs.github.com/en/free-pro-team@latest/developers/apps/authorizing-oauth-apps#web-application-flow for auth instead
   const auth = createBasicAuth({
     username: credentials.username,
     password: credentials.password,
